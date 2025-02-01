@@ -25,6 +25,7 @@
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -87,16 +88,15 @@
                 <h2 class="section-title">Skills</h2>
 
                 <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                    <!-- First Column -->
+                    <div class="skills__column">
+                        <h2 class="skills__subtitle">Professional Skills</h2>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <img src="assets/icons/solidworks.svg" class="skills__icon custom-icon" alt="Skill icon">
                                 <span class="skills__name">SolidWorks</span>
                             </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
+                            <div class="skills__bar skills__html"></div>
                             <div>
                                 <span class="skills__percentage">90%</span>
                             </div>
@@ -106,21 +106,22 @@
                                 <img src="assets/icons/python.svg" class="skills__icon custom-icon" alt="Skill icon">
                                 <span class="skills__name">Python</span>
                             </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
+                            <div class="skills__bar skills__css"></div>
                             <div>
                                 <span class="skills__percentage">90%</span>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- Second Column -->
+                    <div class="skills__column">
+                        <h2 class="skills__subtitle">&nbsp;</h2> <!-- Empty subtitle for alignment -->
                         <div class="skills__data">
                             <div class="skills__names">
                                 <img src="assets/icons/ros.svg" class="skills__icon custom-icon" alt="Skill icon">
                                 <span class="skills__name">Robot Operating System (ROS)</span>
                             </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
+                            <div class="skills__bar skills__js"></div>
                             <div>
                                 <span class="skills__percentage">65%</span>
                             </div>
@@ -130,30 +131,153 @@
                                 <img src="assets/icons/matlab.svg" class="skills__icon custom-icon" alt="Skill icon">
                                 <span class="skills__name">Matlab</span>
                             </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
+                            <div class="skills__bar skills__ux"></div>
                             <div>
                                 <span class="skills__percentage">80%</span>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
                     </div>
                 </div>
             </section>
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+                <h2 class="section-title">Work Experience</h2>
 
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <p class="about__text">Under development</p> 
+                <div class="work__container">
+                    <div class="timeline">
+                        <!-- RIVR Experience -->
+                        <div class="timeline__item">
+                            <div class="timeline__dot"></div>
+                            <div class="timeline__content">
+                                <div class="timeline__header">
+                                    <div class="timeline__company-info">
+                                        <img src="assets/img/companies/RIVR_logo.png" alt="RIVR Logo" class="company__logo">
+                                        <div class="company__details">
+                                            <h3 class="timeline__company">RIVR</h3>
+                                            <a href="https://www.rivr.new" target="_blank" class="company__website">rivr.new</a>
+                                        </div>
+                                    </div>
+                                    <span class="timeline__date">Jan 2025 - Present</span>
+                                </div>
+                                <h4 class="timeline__position">Robotics Hardware Engineer</h4>
+                                <p class="timeline__description">Last-mile delivery robots</p>
+                                <div class="timeline__tags">
+                                    <span class="timeline__tag">Robotics</span>
+                                    <span class="timeline__tag">Mechanical Design</span>
+                                    <span class="timeline__tag">Motor Control</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tesla Experience -->
+                        <div class="timeline__item">
+                            <div class="timeline__dot"></div>
+                            <div class="timeline__content">
+                                <div class="timeline__header">
+                                    <div class="timeline__company-info">
+                                        <img src="assets/img/companies/Tesla_logo.png" alt="Tesla Logo" class="company__logo">
+                                        <div class="company__details">
+                                            <h3 class="timeline__company">Tesla</h3>
+                                            <a href="https://www.tesla.com" target="_blank" class="company__website">tesla.com</a>
+                                        </div>
+                                    </div>
+                                    <span class="timeline__date">May 2024 - Dec 2024</span>
+                                </div>
+                                <h4 class="timeline__position">Powertrain Engineer</h4>
+                                <p class="timeline__description">Validation of Drive Units Design changes and data analysis of motor performance </p>
+                                <div class="timeline__tags">
+                                    <span class="timeline__tag">Automation</span>
+                                    <span class="timeline__tag">Electric Motors</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- NASA JPL Experience -->
+                        <div class="timeline__item">
+                            <div class="timeline__dot"></div>
+                            <div class="timeline__content">
+                                <div class="timeline__header">
+                                    <div class="timeline__company-info">
+                                        <img src="assets/img/companies/NASA_logo.png" alt="NASA JPL Logo" class="company__logo">
+                                        <div class="company__details">
+                                            <h3 class="timeline__company">NASA Jet Propulsion Laboratory</h3>
+                                            <a href="https://www.jpl.nasa.gov" target="_blank" class="company__website">jpl.nasa.gov</a>
+                                        </div>
+                                    </div>
+                                    <span class="timeline__date">Oct 2023 - Apr 2023</span>
+                                </div>
+                                <h4 class="timeline__position">Robotics Research Engineer</h4>
+                                <p class="timeline__description">Development of next-generation Lunar Rovers and robotic exploration systems.</p>
+                                <div class="timeline__tags">
+                                    <span class="timeline__tag">Space Robotics</span>
+                                    <span class="timeline__tag">Research</span>
+                                    <span class="timeline__tag">Rovers</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== EDUCATION =====-->
+            <section class="education section" id="education">
+                <h2 class="section-title">Education</h2>
+
+                <div class="education__container">
+                    <div class="timeline">
+                        <!-- Master's Degree -->
+                        <div class="timeline__item">
+                            <div class="timeline__dot"></div>
+                            <div class="timeline__content">
+                                <div class="timeline__header">
+                                    <div class="timeline__company-info">
+                                        <img src="assets/img/education/polimi_logo.png" alt="Polimi Logo" class="company__logo">
+                                        <div class="company__details">
+                                            <h3 class="timeline__company">Politecnico di Milano</h3>
+                                            <a href="https://polimi.it" target="_blank" class="company__website">polimi.it</a>
+                                        </div>
+                                    </div>
+                                    <span class="timeline__date">2021 - 2024</span>
+                                </div>
+                                <h4 class="timeline__position">MSc Mechanical Engineering</h4>
+                                <p class="timeline__description">
+                                    Specialized in Robotics and Control Systems with focus on autonomous systems and advanced robotics.
+                                </p>
+                                <div class="timeline__tags">
+                                    <span class="timeline__tag">Robotics</span>
+                                    <span class="timeline__tag">Control Systems</span>
+                                    <span class="timeline__tag">Machine Learning</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bachelor's Degree -->
+                        <div class="timeline__item">
+                            <div class="timeline__dot"></div>
+                            <div class="timeline__content">
+                                <div class="timeline__header">
+                                    <div class="timeline__company-info">
+                                        <img src="assets/img/education/unisa_logo.png" alt="Unisa Logo" class="company__logo">
+                                        <div class="company__details">
+                                            <h3 class="timeline__company">Università degli studi di Salerno</h3>
+                                            <a href="https://www.unisa.it" target="_blank" class="company__website">unisa.it</a>
+                                        </div>
+                                    </div>
+                                    <span class="timeline__date">2018 - 2021</span>
+                                </div>
+                                <h4 class="timeline__position">BSc Mechanical Engineering</h4>
+                                <p class="timeline__description">
+                                    Foundation in mechanical engineering principles with emphasis on robotics and automation.
+                                </p>
+                                <div class="timeline__tags">
+                                    <span class="timeline__tag">Mechanical Design</span>
+                                    <span class="timeline__tag">Robotics</span>
+                                    <span class="timeline__tag">Engineering</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
