@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <link rel="stylesheet" href="../assets/css/project-page.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <title>Mini Drone Project - Mario Bozza</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="../index.html" class="nav__logo">Mario Bozza</a>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="../index.html#home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="../index.html#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="../index.html#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <section class="project-details section">
+                <div class="project-details__container bd-grid">
+                    <div class="project-details__header">
+                        <a href="../index.html#projects" class="back-button">
+                            <i class='bx bx-left-arrow-alt'></i> Back to Projects
+                        </a>
+                        <h1 class="project-details__title">Mini Drone Project</h1>
+                        <div class="project-details__tags">
+                            <span class="project__tag">ESP32</span>
+                            <span class="project__tag">Robotics</span>
+                            <span class="project__tag">Drone</span>
+                            <span class="project__tag">Control Systems</span>
+                        </div>
+                    </div>
+
+                    <div class="project-details__content">
+                        <!-- Project Overview -->
+                        <section class="project-section">
+                            <h2 class="project-section__title">Overview</h2>
+                            <p class="project-section__text">
+                                A custom-built mini drone project utilizing brushed motors and an ESP32-based control system. 
+                                The project features a unique dual ESP32 setup - one for the ground station and another for 
+                                the airborne receiver, creating a complete control system from joystick input to motor control.
+                            </p>
+                            <div class="project-image">
+                                <img src="../assets/img/projects/drone-img.jpg" alt="Mini quadcopter" class="project-main-image">
+                            </div>
+                        </section>
+
+                        <!-- System Architecture -->
+                        <section class="project-section">
+                            <h2 class="project-section__title">System Architecture</h2>
+                            <div class="project-section__text">
+                                <ul class="project-list">
+                                    <li><strong>Input:</strong> HUI Joystick connected to a laptop</li>
+                                    <li><strong>Ground Station:</strong> ESP32 module receiving signals from the laptop via serial port</li>
+                                    <li><strong>Airborne Receiver:</strong> Second ESP32 module receiving signals from the ground station</li>
+                                    <li><strong>Flight Controller:</strong> Receives signals from the airborne ESP32 and controls the motors</li>
+                                    <li><strong>Motors:</strong> 4 brushed motors for drone propulsion</li>
+                                </ul>
+                                <div class="project-image">
+                                    <img src="../assets/img/projects/Architecture.jpg" alt="Circuit Diagram" class="project-diagram">
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Components -->
+                        <section class="project-section">
+                            <h2 class="project-section__title">Components</h2>
+                            <div class="project-components">
+                                <div class="component-item">
+                                    <span class="component-name">Brushed Motors, Frame & Propellers</span>
+                                    <span class="component-price">€14.00</span>
+                                </div>
+                                <div class="component-item">
+                                    <span class="component-name">Flight Controller</span>
+                                    <span class="component-price">€16.00</span>
+                                </div>
+                                <div class="component-item">
+                                    <span class="component-name">Brushed ESC (x4)</span>
+                                    <span class="component-price">€5.00</span>
+                                </div>
+                                <div class="component-item">
+                                    <span class="component-name">ESP32 Module (x2)</span>
+                                    <span class="component-price">€6.00</span>
+                                </div>
+                                <div class="component-item">
+                                    <span class="component-name">Battery</span>
+                                    <span class="component-price">€7.00</span>
+                                </div>
+                                <div class="component-item total">
+                                    <span class="component-name">Total Cost</span>
+                                    <span class="component-price">€50.00</span>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Setup -->
+                        <section class="project-section">
+                            <h2 class="project-section__title">Setup and Usage</h2>
+                            <div class="project-section__text">
+                                <ol class="setup-list">
+                                    <li>
+                                        <h3>Ground Station Setup</h3>
+                                        <p>Connect the first ESP32 to the laptop and upload the sender code to it</p>
+                                    </li>
+                                    <li>
+                                        <h3>Drone Setup</h3>
+                                        <ul>
+                                            <li>Assemble the drone frame with motors and flight controller</li>
+                                            <li>Upload the receiver code to the drone's ESP32 module</li>
+                                            <li>Connect the ESP32 to the flight controller through the UART port</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Operation</h3>
+                                        <ul>
+                                            <li>Run the Joystick_serial code to start communication and the joystick UI</li>
+                                            <li>Power on the drone</li>
+                                            <li>Use the Keyboard to control the drone</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                        </section>
+
+                        <!-- Future Objectives -->
+                        <section class="project-section">
+                            <h2 class="project-section__title">Future Objectives</h2>
+                            <div class="project-section__text">
+                                <p>While this project currently focuses on manual control via a joystick, our long-term objective 
+                                is to make the drone autonomous. Future development will involve implementing features such as:</p>
+                                <ul class="project-list">
+                                    <li>Sensor integration for environmental awareness</li>
+                                    <li>Path planning algorithms</li>
+                                    <li>Obstacle avoidance systems</li>
+                                    <li>Autonomous takeoff and landing capabilities</li>
+                                    <li>Mission planning and execution</li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <!-- Links -->
+                        <section class="project-section">
+                            <h2 class="project-section__title">Links</h2>
+                            <div class="project-links">
+                                <a href="https://github.com/mariobo8/esp32-drone" class="project-link">
+                                    <i class='bx bxl-github'></i> GitHub Repository
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Mario Bozza</p>
+            <p class="footer__copy">&#169; All rights reserved</p>
+        </footer>
+
+        <!--===== MAIN JS =====-->
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>
