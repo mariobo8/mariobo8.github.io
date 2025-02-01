@@ -3,13 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>Portfolio website complete</title>
+        <title>Mario Bozza - Roboticist</title>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -22,11 +18,8 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#content" class="nav__link">About</a></li>
                     </ul>
                 </div>
 
@@ -41,7 +34,7 @@
             <section class="home bd-grid" id="home">
                 <div class="home__data">
                     <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Mario Bozza</span><br> Roboticist</h1>
-                    <a href="#contact" class="button">Contact</a>
+                    <a href="#content" class="button">About Me</a>
                 </div>
 
                 <div class="home__social">
@@ -62,64 +55,6 @@
                 </div>
             </section>
 
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <!-- First Column -->
-                    <div class="skills__column">
-                        <h2 class="skills__subtitle">Professional Skills</h2>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <img src="assets/icons/solidworks.svg" class="skills__icon custom-icon" alt="Skill icon">
-                                <span class="skills__name">SolidWorks</span>
-                            </div>
-                            <div class="skills__bar skills__html"></div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <img src="assets/icons/python.svg" class="skills__icon custom-icon" alt="Skill icon">
-                                <span class="skills__name">Python</span>
-                            </div>
-                            <div class="skills__bar skills__css"></div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Second Column -->
-                    <div class="skills__column">
-                        <h2 class="skills__subtitle">&nbsp;</h2> <!-- Empty subtitle for alignment -->
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <img src="assets/icons/ros.svg" class="skills__icon custom-icon" alt="Skill icon">
-                                <span class="skills__name">Robot Operating System (ROS)</span>
-                            </div>
-                            <div class="skills__bar skills__js"></div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <img src="assets/icons/matlab.svg" class="skills__icon custom-icon" alt="Skill icon">
-                                <span class="skills__name">Matlab</span>
-                            </div>
-                            <div class="skills__bar skills__ux"></div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <!--===== PROJECTS =====-->
             <section class="projects section" id="projects">
                 <h2 class="section-title">Projects</h2>
@@ -127,13 +62,11 @@
                 <div class="projects__container bd-grid">
                     <!-- Project 1 -->
                     <div class="project__card">
-                        <img src="assets/img/projects/drone-img.png" alt="Project 1" class="project__img">
+                        <img src="assets/img/projects/esp32_drone/drone-img.png" alt="Project 1" class="project__img">
                         <div class="project__content">
-                            <h3 class="project__title">Autonomous Drone</h3>
-                            <p class="project__description">Development of an autonomous drone system for indoor navigation and mapping.</p>
+                            <h3 class="project__title">ESP32 Drone</h3>
+                            <p class="project__description">Brushed Quadcopter controlled through a ESP-32 module</p>
                             <div class="project__tags">
-                                <span class="project__tag">Robotics</span>
-                                <span class="project__tag">Computer Vision</span>
                             </div>
                             <a href="projects/esp32-drone.html" class="project__button">
                                 View Details <i class='bx bx-right-arrow-alt'></i>
@@ -143,15 +76,27 @@
 
                     <!-- Project 2 -->
                     <div class="project__card">
-                        <img src="assets/img/projects/project3-preview.jpg" alt="Project 3" class="project__img">
+                        <img src="assets/img/projects/MoCap4Robotics/MoCap_cover.png" alt="Project 3" class="project__img">
                         <div class="project__content">
                             <h3 class="project__title">MoCap4Robotics</h3>
-                            <p class="project__description">Development of a mobile robot with SLAM capabilities for autonomous navigation.</p>
+                            <p class="project__description">Development of a low-cost Motion Capture system for robotics</p>
                             <div class="project__tags">
-                                <span class="project__tag">SLAM</span>
-                                <span class="project__tag">Path Planning</span>
                             </div>
                             <a href="projects/mocap4robotics.html" class="project__button">
+                                View Details <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="project__card">
+                        <img src="assets/img/projects/robo_dog/robodog_cover.jpeg" alt="Project 3" class="project__img">
+                        <div class="project__content">
+                            <h3 class="project__title">Cheap Robodog</h3>
+                            <p class="project__description">Low-cost quadruped robot</p>
+                            <div class="project__tags">
+                            </div>
+                            <a href="projects/cheap_robodog.html" class="project__button">
                                 View Details <i class='bx bx-right-arrow-alt'></i>
                             </a>
                         </div>
@@ -159,11 +104,79 @@
                 </div>
             </section>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work Experience</h2>
+            <!--===== MAIN CONTENT =====-->
+            <section class="main-content section" id="content">
+                <!-- About Section -->
+                <div class="content-section about-section bd-grid">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="about-container">
+                        <p class="about__text">
+                            I am a Robotics Engineer with a passion for building new cool stuff. I had the chance to gaine valuable experience
+                            at top organizations like NASA JPL and Tesla, working on exciting projects from space rovers to electric
+                            cars. I like oscillating between designing mechanical parts and writing the software to make them work.
+                            I really enjoy tackling complex problems and bringing ideas to life, whether it's a flying drone, a walking robot, or a self-
+                            driving vehicle.
+                        </p>
+                    </div>
+                </div>
 
-                <div class="work__container">
+                <!-- Skills Section -->
+                <div class="content-section">
+                    <h2 class="section-title">Professional Skills</h2>
+                    <div class="skills__container bd-grid">          
+                        <!-- First Column -->
+                        <div class="skills__column">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <img src="assets/icons/solidworks.svg" class="skills__icon custom-icon" alt="Skill icon">
+                                    <span class="skills__name">SolidWorks</span>
+                                </div>
+                                <div class="skills__bar skills__html"></div>
+                                <div>
+                                    <span class="skills__percentage">90%</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <img src="assets/icons/python.svg" class="skills__icon custom-icon" alt="Skill icon">
+                                    <span class="skills__name">Python</span>
+                                </div>
+                                <div class="skills__bar skills__css"></div>
+                                <div>
+                                    <span class="skills__percentage">90%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second Column -->
+                        <div class="skills__column">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <img src="assets/icons/ros.svg" class="skills__icon custom-icon" alt="Skill icon">
+                                    <span class="skills__name">Robot Operating System (ROS)</span>
+                                </div>
+                                <div class="skills__bar skills__js"></div>
+                                <div>
+                                    <span class="skills__percentage">65%</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <img src="assets/icons/matlab.svg" class="skills__icon custom-icon" alt="Skill icon">
+                                    <span class="skills__name">Matlab</span>
+                                </div>
+                                <div class="skills__bar skills__ux"></div>
+                                <div>
+                                    <span class="skills__percentage">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work Experience Section -->
+                <div class="content-section">
+                    <h2 class="section-title">Work Experience</h2>
                     <div class="timeline">
                         <!-- RIVR Experience -->
                         <div class="timeline__item">
@@ -181,11 +194,6 @@
                                 </div>
                                 <h4 class="timeline__position">Robotics Hardware Engineer</h4>
                                 <p class="timeline__description">Last-mile delivery robots</p>
-                                <div class="timeline__tags">
-                                    <span class="timeline__tag">Robotics</span>
-                                    <span class="timeline__tag">Mechanical Design</span>
-                                    <span class="timeline__tag">Motor Control</span>
-                                </div>
                             </div>
                         </div>
 
@@ -205,10 +213,6 @@
                                 </div>
                                 <h4 class="timeline__position">Powertrain Engineer</h4>
                                 <p class="timeline__description">Validation of Drive Units Design changes and data analysis of motor performance </p>
-                                <div class="timeline__tags">
-                                    <span class="timeline__tag">Automation</span>
-                                    <span class="timeline__tag">Electric Motors</span>
-                                </div>
                             </div>
                         </div>
 
@@ -228,22 +232,15 @@
                                 </div>
                                 <h4 class="timeline__position">Robotics Research Engineer</h4>
                                 <p class="timeline__description">Development of next-generation Lunar Rovers and robotic exploration systems.</p>
-                                <div class="timeline__tags">
-                                    <span class="timeline__tag">Space Robotics</span>
-                                    <span class="timeline__tag">Research</span>
-                                    <span class="timeline__tag">Rovers</span>
-                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <!--===== EDUCATION =====-->
-            <section class="education section" id="education">
-                <h2 class="section-title">Education</h2>
-
-                <div class="education__container">
+                <!-- Education Section -->
+                <div class="content-section">
+                    <h2 class="section-title">Education</h2>
                     <div class="timeline">
                         <!-- Master's Degree -->
                         <div class="timeline__item">
@@ -263,11 +260,6 @@
                                 <p class="timeline__description">
                                     Specialized in Robotics and Control Systems with focus on autonomous systems and advanced robotics.
                                 </p>
-                                <div class="timeline__tags">
-                                    <span class="timeline__tag">Robotics</span>
-                                    <span class="timeline__tag">Control Systems</span>
-                                    <span class="timeline__tag">Machine Learning</span>
-                                </div>
                             </div>
                         </div>
 
@@ -289,37 +281,22 @@
                                 <p class="timeline__description">
                                     Foundation in mechanical engineering principles with emphasis on robotics and automation.
                                 </p>
-                                <div class="timeline__tags">
-                                    <span class="timeline__tag">Mechanical Design</span>
-                                    <span class="timeline__tag">Robotics</span>
-                                    <span class="timeline__tag">Engineering</span>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <!--===== About =====-->
-            <section class="about-section" id="about">
-                <h2 class="section-title">About</h2>
-                <div>
-                    <h2 class="about__subtitle">I am Mario Bozza</h2>
-                    <p class="about__text">a Robotics Engineer with a passion for building innovative machines. Gained valuable experience
-                        at top organizations like NASA JPL and Tesla, working on exciting projects from space rovers to electric
-                        cars. Equally comfortable designing mechanical parts and writing smart software. Enjoys tackling
-                        complex problems and bringing ideas to life, whether it's a flying drone, a walking robot, or a self-
-                        driving vehicle.</p>           
-                </div>   
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
-                    </form>
+                <!-- Contact Section -->
+                <div class="content-section">
+                    <h2 class="section-title">Contact</h2>
+                    <div class="contact__container bd-grid">
+                        <form action="" class="contact__form">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                            <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                            <input type="button" value="Send" class="contact__button button">
+                        </form>
+                    </div>
                 </div>
             </section>
         </main>
@@ -327,11 +304,10 @@
         <!--===== FOOTER =====-->
         <footer class="footer">
             <p class="footer__title">Mario Bozza</p>
-            <p class="footer__copy">&#169; All rigths reserved</p>
+            <p class="footer__copy">&#169; All rights reserved</p>
         </footer>
 
-
-        <!--=====  REVEAL =====-->
+        <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
