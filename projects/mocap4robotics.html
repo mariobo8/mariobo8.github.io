@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <link rel="stylesheet" href="../assets/css/project-page.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <title>MoCap4Robotics - Mario Bozza</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="../index.html" class="nav__logo">Mario Bozza</a>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="../index.html#home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="../index.html#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="../index.html#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <section class="project-details section">
+                <div class="project-details__container bd-grid">
+                    <div class="project-details__header">
+                        <a href="../index.html#projects" class="back-button">
+                            <i class='bx bx-left-arrow-alt'></i> Back to Projects
+                        </a>
+                        <h1 class="project-details__title">MoCap4Robotics</h1>
+                        <div class="project-details__tags">
+                            <span class="project__tag">Motion Capture</span>
+                            <span class="project__tag">Computer Vision</span>
+                            <span class="project__tag">OpenCV</span>
+                            <span class="project__tag">PS3 Eye</span>
+                            <span class="project__tag">Python</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge">Active Development</span>
+                        </div>
+                    </div>
+
+                    <div class="project-details__content">
+                        <!-- Project Overview -->
+                        <section class="project-section">
+                            <h2 class="project-section__title">Overview</h2>
+                            <p class="project-section__text">
+                                MoCap4Robotics is an innovative project developing a cost-effective motion capture system 
+                                using PS3 Eye cameras. This open-source solution aims to provide an affordable alternative 
+                                to expensive commercial systems like Vicon, making motion capture technology accessible 
+                                for robotics applications, research, and education.
+                            </p>
+                        </section>
+
+                        <!-- Key Features -->
+                        <section class="project-section">
+                            <h2 class="project-section__title">Key Features</h2>
+                            <div class="features-grid">
+                                <div class="feature-card">
+                                    <i class='bx bx-dollar-circle feature-icon'></i>
+                                    <h3>Cost-Effective</h3>
+                                    <p>Utilizes affordable PS3 Eye cameras instead of expensive specialized hardware</p>
+                                </div>
+                                <div class="feature-card">
+                                    <i class='bx bx-camera feature-icon'></i>
+                                    <h3>Multi-Camera Sync</h3>
+                                    <p>Synchronized multiple camera feeds for accurate 3D tracking</p>
+                                </div>
+                                <div class="feature-card">
+                                    <i class='bx bx-time feature-icon'></i>
+                                    <h3>Real-Time Processing</h3>
+                                    <p>Live data processing for immediate feedback in robotics applications</p>
+                                </div>
+                                <div class="feature-card">
+                                    <i class='bx bx-code-alt feature-icon'></i>
+                                    <h3>Open Source</h3>
+                                    <p>Customizable solution for various robotics projects</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Technical Implementation -->
+                        <section class="project-section">
+                            <h2 class="project-section__title">Technical Implementation</h2>
+                            <div class="project-section__text">
+                                <div class="tech-stack">
+                                    <h3>Core Technologies:</h3>
+                                    <ul class="project-list">
+                                        <li>Python for main application logic</li>
+                                        <li>OpenCV (compiled from source) for image processing</li>
+                                        <li>PS3 Eye cameras for video capture</li>
+                                        <li>Web interface for system control and visualization</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Setup Instructions -->
+                        <section class="project-section">
+                            <h2 class="project-section__title">Setup Instructions</h2>
+                            <div class="setup-container">
+                                <div class="setup-step">
+                                    <h3>1. Dependencies Installation</h3>
+                                    <div class="code-block">
+                                        <pre><code>
+# Compile OpenCV from source
+git clone https://github.com/opencv/opencv.git
+cd opencv
+mkdir build && cd build
+cmake ..
+make -j4
+sudo make install</code></pre>
+                                    </div>
+                                </div>
+                                <div class="setup-step">
+                                    <h3>2. Application Launch</h3>
+                                    <p>Run the application and access the web interface:</p>
+                                    <div class="code-block">
+                                        <pre><code>python app.py
+# Open the static IP address shown in terminal</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Project Goals -->
+                        <section class="project-section">
+                            <h2 class="project-section__title">Development Goals</h2>
+                            <div class="goals-container">
+                                <div class="goal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <span>Enhance multi-camera synchronization accuracy</span>
+                                </div>
+                                <div class="goal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <span>Improve 3D tracking algorithms</span>
+                                </div>
+                                <div class="goal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <span>Optimize real-time data processing</span>
+                                </div>
+                                <div class="goal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <span>Expand documentation and usage examples</span>
+                                </div>
+                                <div class="goal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <span>Create educational resources for implementation</span>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Links -->
+                        <section class="project-section">
+                            <h2 class="project-section__title">Links</h2>
+                            <div class="project-links">
+                                <a href="https://github.com/mariobo8/MoCap4Robotics" class="project-link">
+                                    <i class='bx bxl-github'></i> GitHub Repository
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class='bx bx-book-open'></i> Documentation
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Mario Bozza</p>
+            <p class="footer__copy">&#169; All rights reserved</p>
+        </footer>
+
+        <!--===== MAIN JS =====-->
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>

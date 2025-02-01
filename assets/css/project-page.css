@@ -1,0 +1,365 @@
+/* ===== PROJECT DETAILS PAGE =====*/
+.project-details__container {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-details__header {
+    margin-bottom: 3rem;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--first-color);
+    margin-bottom: 1rem;
+    font-weight: var(--font-semi);
+}
+
+.back-button:hover {
+    gap: 1rem;
+}
+
+.project-details__title {
+    font-size: 2.5rem;
+    color: var(--second-color);
+    margin-bottom: 1rem;
+}
+
+.project-details__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Project Sections */
+.project-section {
+    margin-bottom: 3rem;
+}
+
+.project-section__title {
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.project-section__text {
+    color: var(--second-color);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Project Lists */
+.project-list {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.project-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-list li::before {
+    content: "•";
+    color: var(--first-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Project Gallery */
+.project-gallery {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.project-gallery img {
+    width: 100%;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.project-gallery img:hover {
+    transform: scale(1.02);
+}
+
+/* Project Links */
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--first-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background: rgba(var(--first-color-rgb), 0.1);
+    transition: 0.3s;
+}
+
+.project-link:hover {
+    background: rgba(var(--first-color-rgb), 0.2);
+}
+
+/* Responsive */
+@media screen and (min-width: 768px) {
+    .project-details__container {
+        padding: 4rem 2rem;
+    }
+
+    .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .project-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Additional styles for the drone project page */
+.project-image {
+    margin: 2rem 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.project-main-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+}
+
+.project-diagram {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.project-components {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+.component-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.component-item:last-child {
+    border-bottom: none;
+}
+
+.component-item.total {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--first-color);
+    font-weight: bold;
+}
+
+.component-name {
+    color: var(--second-color);
+}
+
+.component-price {
+    color: var(--first-color);
+    font-weight: var(--font-semi);
+}
+
+.setup-list {
+    list-style: none;
+    padding: 0;
+    counter-reset: setup-counter;
+}
+
+.setup-list > li {
+    margin-bottom: 2rem;
+    position: relative;
+    padding-left: 3rem;
+}
+
+.setup-list > li::before {
+    counter-increment: setup-counter;
+    content: counter(setup-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    background: var(--first-color);
+    color: var(--bg-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-semi);
+}
+
+.setup-list h3 {
+    color: var(--first-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.setup-list ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.setup-list ul li {
+    margin-bottom: 0.5rem;
+    color: var(--second-color);
+}
+
+/* Additional styles for the MoCap project page */
+.status-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(var(--first-color-rgb), 0.1);
+    color: var(--first-color);
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    border: 1px solid rgba(var(--first-color-rgb), 0.2);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: var(--second-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.feature-card p {
+    color: var(--second-color);
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.tech-stack {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
+
+.tech-stack h3 {
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.code-block {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    overflow-x: auto;
+}
+
+.code-block pre {
+    margin: 0;
+}
+
+.code-block code {
+    color: var(--second-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.setup-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.setup-step {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.setup-step h3 {
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.goals-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.goal-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.goal-item:hover {
+    transform: translateX(10px);
+}
+
+.goal-item i {
+    color: var(--first-color);
+    font-size: 1.5rem;
+}
+
+.goal-item span {
+    color: var(--second-color);
+}
+
+@media screen and (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .setup-container {
+        gap: 1rem;
+    }
+}

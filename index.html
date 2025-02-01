@@ -24,6 +24,7 @@
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                         <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
                         <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
@@ -42,7 +43,7 @@
                 <div class="home__data">
                     <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Mario Bozza</span><br> Roboticist</h1>
 
-                    <a href="#" class="button">Contact</a>
+                    <a href="#contact" class="button">Contact</a>
                 </div>
 
                 <div class="home__social">
@@ -135,6 +136,45 @@
                             <div>
                                 <span class="skills__percentage">80%</span>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== PROJECTS =====-->
+            <section class="projects section" id="projects">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="projects__container bd-grid">
+                    <!-- Project 1 -->
+                    <div class="project__card">
+                        <img src="assets/img/projects/drone-img.png" alt="Project 1" class="project__img">
+                        <div class="project__content">
+                            <h3 class="project__title">Autonomous Drone</h3>
+                            <p class="project__description">Development of an autonomous drone system for indoor navigation and mapping.</p>
+                            <div class="project__tags">
+                                <span class="project__tag">Robotics</span>
+                                <span class="project__tag">Computer Vision</span>
+                            </div>
+                            <a href="projects/esp32-drone.html" class="project__button">
+                                View Details <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project__card">
+                        <img src="assets/img/projects/project3-preview.jpg" alt="Project 3" class="project__img">
+                        <div class="project__content">
+                            <h3 class="project__title">MoCap4Robotics</h3>
+                            <p class="project__description">Development of a mobile robot with SLAM capabilities for autonomous navigation.</p>
+                            <div class="project__tags">
+                                <span class="project__tag">SLAM</span>
+                                <span class="project__tag">Path Planning</span>
+                            </div>
+                            <a href="projects/mocap4robotics.html" class="project__button">
+                                View Details <i class='bx bx-right-arrow-alt'></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -303,7 +343,7 @@
         </footer>
 
 
-        <!--===== SCROLL REVEAL =====-->
+        <!--=====  REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
