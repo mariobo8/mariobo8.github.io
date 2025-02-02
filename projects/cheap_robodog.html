@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../assets/css/styles.css">
         <link rel="stylesheet" href="../assets/css/project-page.css">
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <title>Mini Drone Project - Mario Bozza</title>
+        <title>Low-Cost Quadruped Robot Project - Mario Bozza</title>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -32,11 +32,14 @@
                         <a href="../index.html#projects" class="back-button">
                             <i class='bx bx-left-arrow-alt'></i> Back to Projects
                         </a>
-                        <h1 class="project-details__title">Mini Drone Project</h1>
+                        <h1 class="project-details__title">Low-Cost Quadruped Robot</h1>
+                        <div style="background-color: #fff3cd; color: #856404; padding: 0.5rem; text-align: center; margin: 1rem 0; border-radius: 4px;">
+                            ⚠️ This project is currently under development. Information and specifications may change.
+                        </div>
                         <div class="project-details__tags">
-                            <span class="project__tag">ESP32</span>
+                            <span class="project__tag">ODrive</span>
                             <span class="project__tag">Robotics</span>
-                            <span class="project__tag">Drone</span>
+                            <span class="project__tag">Brushless Motors</span>
                             <span class="project__tag">Control Systems</span>
                         </div>
                     </div>
@@ -46,12 +49,12 @@
                         <section class="project-section">
                             <h2 class="project-section__title">Overview</h2>
                             <p class="project-section__text">
-                                A custom-built mini drone project utilizing brushed motors and an ESP32-based control system. 
-                                The project features a unique dual ESP32 setup - one for the ground station and another for 
-                                the airborne receiver, creating a complete control system from joystick input to motor control.
+                                A quadruped robot project focused on using affordable components. The robot uses brushless motors 
+                                with ODrive motor controllers and implements a pulley belt mechanism for leg actuation. The project
+                                aims to create a low-cost platform for legged robotics research and development.
                             </p>
                             <div class="project-image">
-                                <img src="../assets/img/projects/drone-img.jpg" alt="Mini quadcopter" class="project-main-image">
+                                <img src="../assets/img/projects/robo_dog/robodog_cover.jpeg" alt="Quadruped robot" class="project-main-image">
                             </div>
                         </section>
 
@@ -60,45 +63,41 @@
                             <h2 class="project-section__title">System Architecture</h2>
                             <div class="project-section__text">
                                 <ul class="project-list">
-                                    <li><strong>Input:</strong> HUI Joystick connected to a laptop</li>
-                                    <li><strong>Ground Station:</strong> ESP32 module receiving signals from the laptop via serial port</li>
-                                    <li><strong>Airborne Receiver:</strong> Second ESP32 module receiving signals from the ground station</li>
-                                    <li><strong>Flight Controller:</strong> Receives signals from the airborne ESP32 and controls the motors</li>
-                                    <li><strong>Motors:</strong> 4 brushed motors for drone propulsion</li>
+                                    <li><strong>Actuation:</strong> Brushless motors with pulley belt mechanism</li>
+                                    <li><strong>Motor Control:</strong> ODrive controllers for motor control</li>
+                                    <li><strong>Structure:</strong> Custom frame design with 3D printed parts</li>
                                 </ul>
-                                <div class="project-image">
-                                    <img src="../assets/img/projects/Architecture.jpg" alt="Circuit Diagram" class="project-diagram">
-                                </div>
                             </div>
                         </section>
 
                         <!-- Components -->
                         <section class="project-section">
-                            <h2 class="project-section__title">Components</h2>
-                            <div class="project-components">
-                                <div class="component-item">
-                                    <span class="component-name">Brushed Motors, Frame & Propellers</span>
-                                    <span class="component-price">€14.00</span>
-                                </div>
-                                <div class="component-item">
-                                    <span class="component-name">Flight Controller</span>
-                                    <span class="component-price">€16.00</span>
-                                </div>
-                                <div class="component-item">
-                                    <span class="component-name">Brushed ESC (x4)</span>
-                                    <span class="component-price">€5.00</span>
-                                </div>
-                                <div class="component-item">
-                                    <span class="component-name">ESP32 Module (x2)</span>
-                                    <span class="component-price">€6.00</span>
-                                </div>
-                                <div class="component-item">
-                                    <span class="component-name">Battery</span>
-                                    <span class="component-price">€7.00</span>
-                                </div>
-                                <div class="component-item total">
-                                    <span class="component-name">Total Cost</span>
-                                    <span class="component-price">€50.00</span>
+                            <h2 class="project-section__title">Main Components</h2>
+                            <div class="project-section__text">
+                                <ul class="project-list">
+                                    <li>Brushless Motors</li>
+                                    <li>ODrive Motor Controllers</li>
+                                    <li>Pulley Belt System</li>
+                                    <li>3D Printed Frame Parts</li>
+                                    <li>Control Electronics</li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <!-- Motor Testing -->
+                        <section class="project-section">
+                            <h2 class="project-section__title">Motor Testing</h2>
+                            <div class="project-section__text">
+                                <p>Initial testing was conducted to assess motor controllability and define performance specifications, 
+                                as the supplier didn't provide detailed specifications. The test setup allowed for measuring motor 
+                                response and control characteristics under various loads.</p>
+                                
+
+                                <div class="project-video" style="display: flex; justify-content: center; margin: 3rem 0;">
+                                    <video controls width="50%">
+                                        <source src="../assets/img/projects/robo_dog/motor_testing.MOV" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
                                 </div>
                             </div>
                         </section>
@@ -109,23 +108,27 @@
                             <div class="project-section__text">
                                 <ol class="setup-list">
                                     <li>
-                                        <h3>Ground Station Setup</h3>
-                                        <p>Connect the first ESP32 to the laptop and upload the sender code to it</p>
+                                        <h3>Mechanical Assembly</h3>
+                                        <ul>
+                                            <li>Assemble the frame and mount brushless motors</li>
+                                            <li>Install pulley belt system for each joint</li>
+                                            <li>Configure mechanical tensioners for belts</li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <h3>Drone Setup</h3>
+                                        <h3>Electronics Setup</h3>
                                         <ul>
-                                            <li>Assemble the drone frame with motors and flight controller</li>
-                                            <li>Upload the receiver code to the drone's ESP32 module</li>
-                                            <li>Connect the ESP32 to the flight controller through the UART port</li>
+                                            <li>Configure ODrive controllers for each motor pair</li>
+                                            <li>Set up Raspberry Pi with ROS environment</li>
+                                            <li>Install and calibrate IMU sensor</li>
                                         </ul>
                                     </li>
                                     <li>
                                         <h3>Operation</h3>
                                         <ul>
-                                            <li>Run the Joystick_serial code to start communication and the joystick UI</li>
-                                            <li>Power on the drone</li>
-                                            <li>Use the Keyboard to control the drone</li>
+                                            <li>Run motor calibration sequence</li>
+                                            <li>Start ROS control system</li>
+                                            <li>Execute walking gaits through command interface</li>
                                         </ul>
                                     </li>
                                 </ol>
@@ -136,14 +139,13 @@
                         <section class="project-section">
                             <h2 class="project-section__title">Future Objectives</h2>
                             <div class="project-section__text">
-                                <p>While this project currently focuses on manual control via a joystick, our long-term objective 
-                                is to make the drone autonomous. Future development will involve implementing features such as:</p>
+                                <p>While the current implementation focuses on basic walking gaits, future development will include:</p>
                                 <ul class="project-list">
-                                    <li>Sensor integration for environmental awareness</li>
-                                    <li>Path planning algorithms</li>
-                                    <li>Obstacle avoidance systems</li>
-                                    <li>Autonomous takeoff and landing capabilities</li>
-                                    <li>Mission planning and execution</li>
+                                    <li>Advanced dynamic walking algorithms</li>
+                                    <li>Terrain adaptation capabilities</li>
+                                    <li>Computer vision for navigation</li>
+                                    <li>Force sensing for improved ground contact</li>
+                                    <li>Energy optimization for longer operation</li>
                                 </ul>
                             </div>
                         </section>
@@ -152,7 +154,7 @@
                         <section class="project-section">
                             <h2 class="project-section__title">Links</h2>
                             <div class="project-links">
-                                <a href="https://github.com/mariobo8/esp32-drone" class="project-link">
+                                <a href="https://github.com/mariobo8/cheap_robodog" class="project-link">
                                     <i class='bx bxl-github'></i> GitHub Repository
                                 </a>
                             </div>
