@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projects by Mario Bozza - Robotics Engineer featuring drones, motion capture systems, and quadruped robots">
+        <meta name="keywords" content="robotics projects, ESP32 drone, motion capture, quadruped robot, robotics portfolio">
+        <meta name="author" content="Mario Bozza">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/projects.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="canonical" href="https://mariobozza.com/projects" />
+        <title>Projects | Mario Bozza | Robotics Engineer</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="index.html" class="nav__logo">Mario Bozza</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="projects.html" class="nav__link active-link">Projects</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="blog/blog.html" class="nav__link">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== PROJECTS HEADER =====-->
+            <section class="projects-header">
+                <div class="projects-header__container bd-grid">
+                    <h1 class="projects-header__title">My Projects</h1>
+                    <p class="projects-header__subtitle">A collection of my work in robotics, automation, and engineering</p>
+                </div>
+            </section>
+
+            <!--===== PROJECTS CATEGORIES =====-->
+            <section class="categories section">
+                <div class="categories__container bd-grid">
+                    <div class="categories__filters">
+                        <button class="categories__button active" data-filter="all">All</button>
+                        <button class="categories__button" data-filter="drones">Drones</button>
+                        <button class="categories__button" data-filter="robotics">Robotics</button>
+                        <button class="categories__button" data-filter="motion-capture">Motion Capture</button>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== PROJECTS GRID =====-->
+            <section class="projects-grid section">
+                <div class="projects-grid__container bd-grid">
+                    <!-- Project 1: ESP32 Drone -->
+                    <div class="project-card" data-category="drones robotics">
+                        <div class="project-card__image">
+                            <img src="assets/img/projects/esp32_drone/drone-img.png" alt="ESP32 Drone Project">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">ESP32 Drone</h3>
+                            <p class="project-card__description">
+                                Custom-built mini drone utilizing brushed motors and an ESP32-based control system with dual ESP32 setup.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="project-tag">ESP32</span>
+                                <span class="project-tag">Robotics</span>
+                                <span class="project-tag">Drone</span>
+                            </div>
+                            <a href="projects/esp32-drone.html" class="project-card__button">
+                                View Details <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: MoCap4Robotics -->
+                    <div class="project-card" data-category="motion-capture robotics">
+                        <div class="project-card__image">
+                            <img src="assets/img/projects/MoCap4Robotics/MoCap_cover.png" alt="Motion Capture System for Robotics">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">MoCap4Robotics</h3>
+                            <p class="project-card__description">
+                                Low-cost Motion Capture system for robotics applications using PS3 Eye cameras and computer vision.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="project-tag">Motion Capture</span>
+                                <span class="project-tag">Computer Vision</span>
+                                <span class="project-tag">Python</span>
+                            </div>
+                            <a href="projects/mocap4robotics.html" class="project-card__button">
+                                View Details <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Cheap Robodog -->
+                    <div class="project-card" data-category="robotics">
+                        <div class="project-card__image">
+                            <img src="assets/img/projects/robo_dog/robodog_cover.jpeg" alt="Low-cost Quadruped Robot">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Cheap Robodog</h3>
+                            <p class="project-card__description">
+                                Low-cost quadruped robot using brushless motors with ODrive controllers and pulley belt mechanism.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="project-tag">ODrive</span>
+                                <span class="project-tag">Robotics</span>
+                                <span class="project-tag">Quadruped</span>
+                            </div>
+                            <a href="projects/cheap_robodog.html" class="project-card__button">
+                                View Details <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Future Project Placeholder -->
+                    <div class="project-card coming-soon" data-category="robotics">
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Coming Soon</h3>
+                            <p class="project-card__description">
+                                New robotics project under development. Stay tuned for details!
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="project-tag">Robotics</span>
+                                <span class="project-tag">Upcoming</span>
+                            </div>
+                            <div class="project-card__placeholder">
+                                <i class='bx bx-wrench'></i>
+                                <span>Under Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== PROJECT IDEAS =====-->
+            <section class="project-ideas section">
+                <div class="project-ideas__container bd-grid">
+                    <div class="project-ideas__content">
+                        <h2 class="project-ideas__title">Have a project idea?</h2>
+                        <p class="project-ideas__text">
+                            I'm always looking for interesting collaboration opportunities in robotics and automation.
+                            If you have an idea or project you'd like to discuss, I'd love to hear from you!
+                        </p>
+                        <a href="index.html#contact" class="button">Get In Touch</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Mario Bozza</h3>
+                    <p class="footer__description">Robotics Engineer specializing in autonomous systems and mechanical engineering.</p>
+                </div>
+                
+                <div class="footer__content">
+                    <h3 class="footer__title">Explore</h3>
+                    <ul class="footer__links">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="projects.html" class="footer__link">Projects</a></li>
+                        <li><a href="about.html" class="footer__link">About</a></li>
+                        <li><a href="blog/blog.html" class="footer__link">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__content">
+                    <h3 class="footer__title">Connect</h3>
+                    <div class="footer__social">
+                        <a href="https://linkedin.com/in/mariobozza" class="footer__social-link"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/mariobo8" class="footer__social-link"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="footer__copy">&#169; 2025 Mario Bozza. All rights reserved</p>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== PROJECTS FILTERING =====-->
+        <script>
+            // Project filtering functionality
+            document.addEventListener('DOMContentLoaded', () => {
+                const filterButtons = document.querySelectorAll('.categories__button');
+                const projectCards = document.querySelectorAll('.project-card');
+                
+                // Filter projects based on category
+                function filterProjects(category) {
+                    projectCards.forEach(card => {
+                        const categories = card.dataset.category;
+                        
+                        if (category === 'all' || categories.includes(category)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                }
+                
+                // Add click event to filter buttons
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        // Remove active class from all buttons
+                        filterButtons.forEach(btn => btn.classList.remove('active'));
+                        
+                        // Add active class to clicked button
+                        button.classList.add('active');
+                        
+                        // Filter projects
+                        filterProjects(button.dataset.filter);
+                    });
+                });
+            });
+        </script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
