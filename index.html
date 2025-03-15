@@ -33,7 +33,6 @@
         <link rel="stylesheet" href="assets/css/homepage.css">
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link rel="canonical" href="https://mariobozza.com" />
-        <title>Mario Bozza | Robotics Engineer | NASA JPL & Tesla Alumni</title>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -47,8 +46,8 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="index.html" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
                     </ul>
                 </div>
 
@@ -64,7 +63,6 @@
                 <div class="hero__container bd-grid">
                     <div class="hero__content">
                         <h1 class="hero__title">Hi, I'm <span class="hero__title-highlight">Mario Bozza</span></h1>
-                        <p class="hero__subtitle">Robotics Engineer | NASA JPL & Tesla Alumni</p>
                         <p class="hero__description">
                             I build robots and autonomous systems, from concept to reality.
                             Currently working on last-mile delivery robots at RIVR.
@@ -87,68 +85,25 @@
                 
                 <div class="recent-articles__container bd-grid">
                     <!-- Featured Article -->
-                    <div class="featured-article">
-                        <div class="featured-article__image">
-                            <img src="assets/img/blog/nasa-experience.jpg" alt="My Experience at NASA JPL">
-                        </div>
-                        <div class="featured-article__content">
+                    <div class="article-card">
+                        <img src="assets/img/blog/nasa-experience/nasa-entrance.png" alt="My Experience at NASA JPL" class="project-card__img">
+                        <div class="article-card__content">
                             <span class="article__date">March 10, 2025</span>
-                            <h3 class="featured-article__title">My Experience at NASA JPL</h3>
-                            <p class="featured-article__excerpt">
-                                What it was like working on next-generation lunar rovers and robotic exploration systems at NASA's 
-                                Jet Propulsion Laboratory. JPL is a "happy island" for science and exploration.
-                            </p>
-                            <a href="blog/nasa-experience.html" class="article__link">
+                            <h3 class="article-card__title">My Experience at NASA JPL</h3>
+                            <a href="blog/nasa-experience.html" class="article-card__link">
                                 Read More <i class='bx bx-right-arrow-alt'></i>
                             </a>
                         </div>
                     </div>
-                    
-                    <!-- More Articles Teaser -->
-                    <div class="more-articles">
-                        <div class="more-articles__content">
-                            <h3 class="more-articles__title">More Articles Coming Soon</h3>
-                            <p class="more-articles__text">
-                                I'll be sharing insights about robotics, engineering challenges, and my experiences in the industry.
-                                Stay tuned for upcoming content!
-                            </p>
-                            <a href="blog/blog.html" class="button button--small">View All Articles</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== FEATURED PROJECTS =====-->
-            <section class="featured-projects section" id="featured-projects">
-                <h2 class="section-title">Featured Projects</h2>
-                
-                <div class="featured-projects__container bd-grid">
-                    <!-- Project Card 1 -->
-                    <div class="project-card">
+                    <div class="article-card">
                         <img src="assets/img/projects/esp32_drone/drone-img.png" alt="ESP32 Drone Project" class="project-card__img">
-                        <div class="project-card__content">
-                            <h3 class="project-card__title">ESP32 Drone</h3>
-                            <p class="project-card__description">Brushed Quadcopter controlled through an ESP-32 module</p>
-                            <a href="projects/esp32-drone.html" class="project-card__link">
+                        <div class="article-card__content">
+                            <h3 class="article-card__title">ESP32 Drone</h3>
+                            <p class="article-card__description">Brushed Quadcopter controlled through an ESP-32 module</p>
+                            <a href="projects/esp32-drone.html" class="article-card__link">
                                 View Project <i class='bx bx-right-arrow-alt'></i>
                             </a>
                         </div>
-                    </div>
-                    
-                    <!-- Project Card 2 -->
-                    <div class="project-card">
-                        <img src="assets/img/projects/MoCap4Robotics/MoCap_cover.png" alt="MoCap4Robotics" class="project-card__img">
-                        <div class="project-card__content">
-                            <h3 class="project-card__title">MoCap4Robotics</h3>
-                            <p class="project-card__description">Low-cost Motion Capture system for robotics applications</p>
-                            <a href="projects/mocap4robotics.html" class="project-card__link">
-                                View Project <i class='bx bx-right-arrow-alt'></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="featured-projects__more">
-                        <a href="projects.html" class="button">View All Projects</a>
                     </div>
                 </div>
             </section>
@@ -162,7 +117,7 @@
                         <div class="contact__card">
                             <i class='bx bx-mail-send contact__icon'></i>
                             <h3 class="contact__title">Email</h3>
-                            <span class="contact__data">mario.bozza@example.com</span>
+                            <span class="contact__data">m.bozza@outlook.com</span>
                         </div>
                         
                         <div class="contact__card">
@@ -177,13 +132,6 @@
                             <a href="https://github.com/mariobo8" target="_blank" class="contact__data">github.com/mariobo8</a>
                         </div>
                     </div>
-
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea placeholder="Message" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
-                    </form>
                 </div>
             </section>
         </main>
@@ -193,7 +141,7 @@
             <div class="footer__container bd-grid">
                 <div class="footer__content">
                     <h3 class="footer__title">Mario Bozza</h3>
-                    <p class="footer__description">Robotics Engineer specializing in autonomous systems and mechanical engineering.</p>
+                    <p class="footer__description">Robotics Engineer</p>
                 </div>
                 
                 <div class="footer__content">
@@ -202,7 +150,7 @@
                         <li><a href="index.html" class="footer__link">Home</a></li>
                         <li><a href="projects.html" class="footer__link">Projects</a></li>
                         <li><a href="about.html" class="footer__link">About</a></li>
-                        <li><a href="blog/blog.html" class="footer__link">Blog</a></li>
+                        <li><a href="blog.html" class="footer__link">Blog</a></li>
                     </ul>
                 </div>
                 

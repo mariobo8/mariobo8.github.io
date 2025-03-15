@@ -4,7 +4,7 @@
 .blog-header {
     padding-top: 8rem;
     padding-bottom: 4rem;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../img/blog/blog-header-bg.jpg');
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url('../img/blog/blog-header-bg.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -223,20 +223,6 @@
     font-size: 0.8rem;
 }
 
-.blog-article__featured-img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 2rem;
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-.blog-article__featured-img img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
 
 .blog-article__content {
     margin-bottom: 4rem;

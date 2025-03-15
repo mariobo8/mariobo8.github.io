@@ -8,9 +8,9 @@
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
   --hue-color: 186;
-  --first-color: hsl(var(--hue-color), 100%, 49%);
-  --second-color: hsl(var(--hue-color), 100%, 100%);
-  --bg-color: hsl(var(--hue-color), 0%, 0%);
+  --first-color: hsl(var(--hue-color), 0%, 0%);
+  --second-color: hsl(var(--hue-color), 0%, 0%);
+  --bg-color: hsl(var(--hue-color), 100%, 100%);
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
@@ -140,7 +140,7 @@ img {
 }
 .nav__link {
   position: relative;
-  color: #fff;
+  color: #000000;
 }
 .nav__link:hover {
   position: relative;
