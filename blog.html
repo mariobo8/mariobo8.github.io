@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Mario Bozza's Blog - Insights and experiences in robotics, engineering, and technology from a NASA JPL and Tesla alumni.">
+        <meta name="keywords" content="robotics blog, engineering blog, Mario Bozza, NASA JPL, Tesla, autonomous systems">
+        <meta name="author" content="Mario Bozza">
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <link rel="stylesheet" href="../assets/css/blog.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="canonical" href="https://mariobozza.com/blog" />
+        <title>Blog | Mario Bozza | Robotics Engineer</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="../index.html" class="nav__logo">Mario Bozza</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="blog.html" class="nav__link active-link">Blog</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+
+            <!--===== BLOG POSTS =====-->
+            <section class="blog-posts section">
+                <div class="blog-posts__container bd-grid">
+                    <!-- Blog Post 1 -->
+                    <a href="blog/nasa-experience.html" class="blog-card-link">
+                        <article class="blog-card">
+                            <div class="blog-card__img">
+                                <img src="../assets/img/blog/nasa-experience/nasa-entrance.png" alt="My Experience at NASA JPL" />
+                            </div>
+                            <div class="blog-card__content">
+                                <div class="blog-card__meta">
+                                    <span class="blog-card__date">March 10, 2025</span>
+                                    <span class="blog-card__category">Career</span>
+                                </div>
+                                <h2 class="blog-card__title">My Experience at NASA JPL</h2>
+                                <p class="blog-card__excerpt">
+                                    What it was like working on next-generation lunar rovers and robotic exploration systems at NASA's Jet Propulsion Laboratory. A "happy island" for science and exploration.
+                                </p>
+                                <span class="blog-card__link">
+                                    Read More <i class='bx bx-right-arrow-alt'></i>
+                                </span>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Mario Bozza</h3>
+                    <p class="footer__description">Robotics Engineer specializing in autonomous systems and mechanical engineering.</p>
+                </div>
+                
+                <div class="footer__content">
+                    <h3 class="footer__title">Explore</h3>
+                    <ul class="footer__links">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="projects.html" class="footer__link">Projects</a></li>
+                        <li><a href="about.html" class="footer__link">About</a></li>
+                        <li><a href="../blog.html" class="footer__link">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__content">
+                    <h3 class="footer__title">Connect</h3>
+                    <div class="footer__social">
+                        <a href="https://linkedin.com/in/mariobozza" class="footer__social-link"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/mariobo8" class="footer__social-link"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="footer__copy">&#169; 2025 Mario Bozza. All rights reserved</p>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="../assets/js/main.js"></script>
+        
+        <!--===== CLICKABLE CARDS CSS =====-->
+        <style>
+            /* Make entire blog cards clickable */
+            .blog-card-link {
+                display: block;
+                text-decoration: none;
+                color: inherit;
+                transition: transform 0.3s ease;
+            }
+
+            .blog-card-link:hover {
+                text-decoration: none;
+            }
+
+            .blog-card-link:hover .blog-card {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            }
+
+            .blog-card-link .blog-card__link {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                color: var(--first-color);
+                font-weight: var(--font-semi);
+                transition: 0.3s;
+                cursor: pointer;
+            }
+
+            .blog-card-link:hover .blog-card__link {
+                gap: 1rem;
+            }
+        </style>
+    </body>
+</html>
