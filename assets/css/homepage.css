@@ -212,6 +212,10 @@
 .contact__info {
     display: grid;
     gap: 1.5rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .contact__card {
