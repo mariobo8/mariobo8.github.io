@@ -1,17 +1,60 @@
 /* ===== HOMEPAGE STYLES ===== */
 
 /* Hero Section */
+/* Hero Section Modifications */
 .hero {
-    padding-top: 6rem;
-    padding-bottom: 5rem;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
     overflow: hidden;
+    background-image: url('../img/mario_wide.png'); /* Update with your wide image path */
+    background-size: cover;
+    background-position: center right;
+    position: relative;
+}
+
+/* Add this to create an overlay if needed for better text readability */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: 1;
 }
 
 .hero__container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    align-items: center;
+    position: relative;
+    z-index: 2; /* Place content above the overlay */
+}
+
+.hero__content {
+    text-align: left;
+    max-width: 600px; /* Adjust as needed */
+}
+
+/* Remove these since we're no longer using the separate image element */
+.hero__image {
+    display: none;
+}
+
+.hero__img {
+    display: none;
+}
+
+/* You might want to adjust text colors for better visibility against the background */
+.hero__title,
+.hero__subtitle{
+    color: #ffffff!important; /* Adjust color for visibility against your background */
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+}
+
+.hero__description {
+    color: #ffffff!important; /* Adjust color for visibility against your background */
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .hero__content {
@@ -21,7 +64,7 @@
 
 .hero__title {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     line-height: 1.2;
     color: var(--second-color);
 }
@@ -33,22 +76,18 @@
 .hero__subtitle {
     font-size: 1.2rem;
     color: var(--second-color);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     opacity: 0.8;
 }
 
-.hero__description {
-    margin-bottom: 2rem;
-    line-height: 1.6;
-    color: var(--second-color);
-    opacity: 0.7;
-}
+
 
 .hero__buttons {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .hero__image {
@@ -248,12 +287,12 @@ a.contact__data:hover {
 
 .footer__title {
     font-size: 1.2rem;
-    color: var(--first-color);
+    color: black!important;
     margin-bottom: 1rem;
 }
 
 .footer__description {
-    color: var(--second-color);
+    color: black!important;
     font-size: 0.9rem;
     opacity: 0.7;
     line-height: 1.6;

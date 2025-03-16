@@ -2,7 +2,7 @@
 
 /* Projects Header */
 .projects-header {
-    padding: 8rem 0 4rem;
+    padding: 5rem 0 1rem;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url('../img/projects-header-bg.jpg');
     background-size: cover;
     background-position: center;
@@ -10,7 +10,7 @@
 }
 
 .projects-header__title {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--first-color);
     margin-bottom: 1rem;
 }
@@ -25,7 +25,7 @@
 
 /* Categories Section */
 .categories__container {
-    padding: 1rem 0;
+    padding: 0rem 0;
 }
 
 .categories__filters {
@@ -81,7 +81,7 @@
 }
 
 .project-card__image {
-    height: 220px;
+    height: 160px;
     overflow: hidden;
 }
 
