@@ -157,6 +157,7 @@
     border: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    height: 100%;
 }
 
 .article-card:hover {
@@ -389,11 +390,12 @@ a.contact__data:hover {
     }
 }
 
+/* Change to equal column widths for larger screens */
 @media screen and (min-width: 768px) {
-    .hero__container {
-        grid-template-columns: repeat(2, 1fr);
+    .recent-articles__container {
+        grid-template-columns: repeat(2, 1fr); /* Change to equal 1:1 ratio */
     }
-    
+
     .hero__content {
         order: 1;
         text-align: left;
@@ -467,6 +469,12 @@ a.contact__data:hover {
     
     .featured-article {
         grid-template-columns: 1fr 1.5fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .recent-articles__container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
 
