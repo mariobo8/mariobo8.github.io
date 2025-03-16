@@ -36,91 +36,77 @@
         </header>
 
         <main class="l-main">
-            <!--===== PROJECTS HEADER =====-->
-            <section class="projects-header">
-                <div class="projects-header__container bd-grid">
-                    <h1 class="projects-header__title">Projects</h1>
-                    <p class="projects-header__subtitle">A collection of my work in robotics, automation, and engineering</p>
-                </div>
-            </section>
-
-            <!--===== PROJECTS CATEGORIES =====-->
-            <section class="categories section">
-                <div class="categories__container bd-grid">
-                    <div class="categories__filters">
-                        <button class="categories__button active" data-filter="all">All</button>
-                        <button class="categories__button" data-filter="drones">Drones</button>
-                        <button class="categories__button" data-filter="robotics">Robotics</button>
-                        <button class="categories__button" data-filter="motion-capture">Motion Capture</button>
-                    </div>
-                </div>
-            </section>
-
             <!--===== PROJECTS GRID =====-->
             <section class="projects-grid section">
                 <div class="projects-grid__container bd-grid">
                     <!-- Project 1: ESP32 Drone -->
-                    <div class="project-card" data-category="drones robotics">
-                        <div class="project-card__image">
-                            <img src="assets/img/projects/esp32_drone/drone-img.png" alt="ESP32 Drone Project">
-                        </div>
-                        <div class="project-card__content">
-                            <h3 class="project-card__title">ESP32 Drone</h3>
-                            <p class="project-card__description">
-                                Custom-built mini drone utilizing brushed motors and an ESP32-based control system with dual ESP32 setup.
-                            </p>
-                            <div class="project-card__tags">
-                                <span class="project-tag">ESP32</span>
-                                <span class="project-tag">Robotics</span>
-                                <span class="project-tag">Drone</span>
+                    <a href="projects/esp32-drone.html" class="project-card-link">
+                        <div class="project-card" data-category="drones robotics">
+                            <div class="project-card__image">
+                                <img src="assets/img/projects/esp32_drone/drone-img.png" alt="ESP32 Drone Project">
                             </div>
-                            <a href="projects/esp32-drone.html" class="project-card__button">
-                                View Details <i class='bx bx-right-arrow-alt'></i>
-                            </a>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">ESP32 Drone</h3>
+                                <p class="project-card__description">
+                                    Custom-built mini drone utilizing brushed motors and an ESP32-based control system with dual ESP32 setup.
+                                </p>
+                                <div class="project-card__tags">
+                                    <span class="project-tag">ESP32</span>
+                                    <span class="project-tag">Robotics</span>
+                                    <span class="project-tag">Drone</span>
+                                </div>
+                                <span class="project-card__button">
+                                    View Details <i class='bx bx-right-arrow-alt'></i>
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Project 2: MoCap4Robotics -->
-                    <div class="project-card" data-category="motion-capture robotics">
-                        <div class="project-card__image">
-                            <img src="assets/img/projects/MoCap4Robotics/MoCap_cover.png" alt="Motion Capture System for Robotics">
-                        </div>
-                        <div class="project-card__content">
-                            <h3 class="project-card__title">MoCap4Robotics</h3>
-                            <p class="project-card__description">
-                                Low-cost Motion Capture system for robotics applications using PS3 Eye cameras and computer vision.
-                            </p>
-                            <div class="project-card__tags">
-                                <span class="project-tag">Motion Capture</span>
-                                <span class="project-tag">Computer Vision</span>
-                                <span class="project-tag">Python</span>
+                    <a href="projects/mocap4robotics.html" class="project-card-link">
+                        <div class="project-card" data-category="motion-capture robotics">
+                            <div class="project-card__image">
+                                <img src="assets/img/projects/MoCap4Robotics/MoCap_cover.png" alt="Motion Capture System for Robotics">
                             </div>
-                            <a href="projects/mocap4robotics.html" class="project-card__button">
-                                View Details <i class='bx bx-right-arrow-alt'></i>
-                            </a>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">MoCap4Robotics</h3>
+                                <p class="project-card__description">
+                                    Low-cost Motion Capture system for robotics applications using PS3 Eye cameras and computer vision.
+                                </p>
+                                <div class="project-card__tags">
+                                    <span class="project-tag">Motion Capture</span>
+                                    <span class="project-tag">Computer Vision</span>
+                                    <span class="project-tag">Python</span>
+                                </div>
+                                <span class="project-card__button">
+                                    View Details <i class='bx bx-right-arrow-alt'></i>
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Project 3: Cheap Robodog -->
-                    <div class="project-card" data-category="robotics">
-                        <div class="project-card__image">
-                            <img src="assets/img/projects/robo_dog/robodog_cover.jpeg" alt="Low-cost Quadruped Robot">
-                        </div>
-                        <div class="project-card__content">
-                            <h3 class="project-card__title">Cheap Robodog</h3>
-                            <p class="project-card__description">
-                                Low-cost quadruped robot using brushless motors with ODrive controllers and pulley belt mechanism.
-                            </p>
-                            <div class="project-card__tags">
-                                <span class="project-tag">ODrive</span>
-                                <span class="project-tag">Robotics</span>
-                                <span class="project-tag">Quadruped</span>
+                    <a href="projects/cheap_robodog.html" class="project-card-link">
+                        <div class="project-card" data-category="robotics">
+                            <div class="project-card__image">
+                                <img src="assets/img/projects/robo_dog/robodog_cover.jpeg" alt="Low-cost Quadruped Robot">
                             </div>
-                            <a href="projects/cheap_robodog.html" class="project-card__button">
-                                View Details <i class='bx bx-right-arrow-alt'></i>
-                            </a>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">Cheap Robodog</h3>
+                                <p class="project-card__description">
+                                    Low-cost quadruped robot using brushless motors with ODrive controllers and pulley belt mechanism.
+                                </p>
+                                <div class="project-card__tags">
+                                    <span class="project-tag">ODrive</span>
+                                    <span class="project-tag">Robotics</span>
+                                    <span class="project-tag">Quadruped</span>
+                                </div>
+                                <span class="project-card__button">
+                                    View Details <i class='bx bx-right-arrow-alt'></i>
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Future Project Placeholder -->
                     <div class="project-card coming-soon" data-category="robotics">
@@ -196,16 +182,31 @@
             document.addEventListener('DOMContentLoaded', () => {
                 const filterButtons = document.querySelectorAll('.categories__button');
                 const projectCards = document.querySelectorAll('.project-card');
+                const projectLinks = document.querySelectorAll('.project-card-link');
                 
                 // Filter projects based on category
                 function filterProjects(category) {
-                    projectCards.forEach(card => {
+                    projectLinks.forEach(link => {
+                        const card = link.querySelector('.project-card');
                         const categories = card.dataset.category;
                         
                         if (category === 'all' || categories.includes(category)) {
-                            card.style.display = 'block';
+                            link.style.display = 'block';
                         } else {
-                            card.style.display = 'none';
+                            link.style.display = 'none';
+                        }
+                    });
+                    
+                    // Handle the coming soon card which is not wrapped in a link
+                    projectCards.forEach(card => {
+                        if (!card.closest('.project-card-link')) {  // Only target cards not inside links
+                            const categories = card.dataset.category;
+                            
+                            if (category === 'all' || categories.includes(category)) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
                         }
                     });
                 }
@@ -228,5 +229,39 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        
+        <!--===== CLICKABLE CARDS CSS =====-->
+        <style>
+            /* Make entire cards clickable */
+            .project-card-link {
+                display: block;
+                text-decoration: none;
+                color: inherit;
+                transition: transform 0.3s ease;
+            }
+
+            .project-card-link:hover {
+                text-decoration: none;
+            }
+
+            .project-card-link:hover .project-card {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            }
+
+            .project-card-link .project-card__button {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                color: var(--first-color);
+                font-weight: var(--font-semi);
+                transition: 0.3s;
+                cursor: pointer;
+            }
+
+            .project-card-link:hover .project-card__button {
+                gap: 1rem;
+            }
+        </style>
     </body>
 </html>

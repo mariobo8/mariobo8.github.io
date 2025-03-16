@@ -27,6 +27,7 @@
 .bio__container {
     display: grid;
     gap: 2rem;
+    margin-top: 4rem;
     align-items: center;
 }
 
