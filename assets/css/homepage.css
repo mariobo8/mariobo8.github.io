@@ -20,12 +20,10 @@
 /* Update navigation text for visibility against background */
 .nav__logo {
     color: #ffffff;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .nav__link {
     color: rgba(255, 255, 255, 0.9);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .nav__link:hover,
@@ -474,12 +472,44 @@ a.contact__data:hover {
 
 /* Adjust for mobile menu */
 @media screen and (max-width: 767px) {
+
+    .contact__info {
+        grid-template-columns: 1fr; /* Force single column on smallest screens */
+    }
+    
+    .contact__card {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        flex: auto;
+    }
+    
+    /* Adjust card padding for smaller screens */
+    .contact__card {
+        padding: 1.25rem 1rem;
+    }
+
+    /* Make sure all links stay within their containers */
+    .contact__card-link {
+        display: block;
+        width: 100%;
+    }
+
+    /* Ensure text doesn't overflow */
+    .contact__data {
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
     .nav__menu.show {
         background-color: rgba(0, 0, 0, 0.9);
     }
     
     .nav__toggle {
-        color: #ffffff;
+        color: #000000;
+    }
+
+    .nav__logo {
+        color: #000000;
     }
     
     .l-header.scroll-header .nav__toggle {
