@@ -5,8 +5,135 @@
     margin: 0 auto;
 }
 
-.project-details__header {
-    margin-bottom: 3rem;
+/* New hero section for projects */
+.project-hero {
+    position: relative;
+    padding: 8rem 0 4rem;
+    background-image: url('../img/projects/esp32_drone/drone-img.png');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2rem;
+}
+
+.project-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+    z-index: 1;
+}
+
+.project-hero__content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.project-hero__title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.project-hero a.back-button {
+    color: #ffffff;
+}
+
+.project-hero .project-links {
+    margin: 1rem 0 1.5rem;
+}
+
+.project-hero .project-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.project-hero .project__tag {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Fixed header styles */
+.l-header {
+    background-color: transparent;
+    position: fixed; /* This is the key fix - changed from absolute to fixed */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transition: background-color 0.3s ease;
+}
+
+/* Add this for when user scrolls down */
+.l-header.scroll-header {
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation text styles for visibility against dark backgrounds */
+.nav__logo {
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.nav__link {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.nav__link:hover,
+.nav__link.active-link {
+    color: #ffffff;
+}
+
+.nav__link.active-link::after {
+    background-color: #ffffff;
+}
+
+/* Change text colors when scrolled */
+.l-header.scroll-header .nav__logo {
+    color: var(--second-color);
+    text-shadow: none;
+}
+
+.l-header.scroll-header .nav__link {
+    color: var(--second-color);
+    text-shadow: none;
+}
+
+.l-header.scroll-header .nav__link.active-link::after {
+    background-color: var(--first-color);
+}
+
+/* GitHub link at the top */
+.project-details__header .project-links {
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.project-details__header .project-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background: rgba(var(--first-color-rgb), 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-details__header .project-link:hover {
+    background: rgba(var(--first-color-rgb), 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .back-button {
@@ -37,11 +164,13 @@
 /* Project Sections */
 .project-section {
     margin-bottom: 3rem;
+    margin-top: 1rem;
 }
 
 .project-section__title {
     font-size: 1.5rem;
     color: var(--first-color);
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -117,6 +246,14 @@
 
     .project-gallery {
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .project-hero__title {
+        font-size: 3.5rem;
+    }
+    
+    .project-hero {
+        padding: 10rem 0 6rem;
     }
 }
 
