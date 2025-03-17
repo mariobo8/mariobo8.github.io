@@ -98,7 +98,7 @@ img {
   font-size: 0.9rem;
   color: #717070!important;
   margin-top: 0.5rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0rem!important;
 }
 
 .section {
