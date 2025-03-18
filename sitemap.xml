@@ -3,7 +3,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://mariobozza.com/</loc>
-        <lastmod>2024-02-01</lastmod>
+        <lastmod>2024-04-17</lastmod>
         <priority>1.0</priority>
         <changefreq>monthly</changefreq>
     </url>
@@ -18,15 +18,21 @@
     
     <url>
         <loc>https://mariobozza.com/projects/mocap4robotics.html</loc>
-        <lastmod>2024-02-01</lastmod>
+        <lastmod>2024-04-17</lastmod>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
     
     <url>
         <loc>https://mariobozza.com/projects/cheap_robodog.html</loc>
-        <lastmod>2024-02-01</lastmod>
+        <lastmod>22024-04-17</lastmod>
         <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://mariobozza.com/blog/nasa-experience.html</loc>
+        <lastmod>2024-04-17</lastmod>
+        <priority>0.9</priority>
         <changefreq>monthly</changefreq>
     </url>
 </urlset>
